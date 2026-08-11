@@ -22,7 +22,7 @@ export class HashMap {
     }
     const index = this.hash(key);
     if (index < 0 || index >= this.buckets.length) {
-      throw new Error("Tentando acessar um índice fora dos limites");
+      throw new Error("Trying to access index out of bounds");
     }
 
     const item = this.buckets[index];
@@ -54,7 +54,7 @@ export class HashMap {
     const index = this.hash(key);
 
     if (index < 0 || index >= this.buckets.length) {
-      throw new Error("Tentando acessar um índice fora dos limites");
+      throw new Error("Trying to access index out of bounds");
     }
 
     let current = this.buckets[index];
@@ -89,7 +89,7 @@ export class HashMap {
     const index = this.hash(key);
 
     if (index < 0 || index >= this.buckets.length) {
-      throw new Error("Tentando acessar um índice fora dos limites");
+      throw new Error("Trying to access index out of bounds");
     }
     let current = this.buckets[index];
     if (current === undefined) {
@@ -108,7 +108,7 @@ export class HashMap {
     const index = this.hash(key);
 
     if (index < 0 || index >= this.buckets.length) {
-      throw new Error("Tentando acessar um índice fora dos limites");
+      throw new Error("Trying to access index out of bounds");
     }
     let current = this.buckets[index];
     if (current === undefined) {
